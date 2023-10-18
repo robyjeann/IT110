@@ -1,0 +1,58 @@
+body {
+            font-family: Arial, sans-serif;
+            background-color: #b3a2a2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            height: 100vh; /* 100% of viewport height */
+            background: url('picture.png') no-repeat; /* Specify the path to your image */
+            background-size: cover; /* Adjusts the image size to cover the entire container */
+            background-position: center; /* Centers the image within the container */
+            
+        }
+        .container {
+            max-width: 400px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #e2c5c5;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input {
+            width: 80%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .error {
+            color: red;
+            font-size: 14px;
+        }
+        .btn-container {
+            text-align: center;
+            
+        }
+        .btn {
+            background-color: #c6daee;
+            color: #e7d3d3;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #858181;
+        }
+
+       /* On lower displays, media query will switch to a one column layout. */
+       @media (max-width: 768px) {
+      .container {
+        grid-template-columns: 1fr;
+        }
+        }
